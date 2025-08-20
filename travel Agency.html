@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreWorld Travel Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url(world.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+    .package-img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">ExploreWorld</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero text-center">
+    <h1>Explore the World with Us</h1>
+  </div>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="paris.jpeg" class="card-img-top package-img" alt="Paris">
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">Experience the romance of the City of Lights.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="bali.webp" class="card-img-top package-img" alt="Bali">
+            <div class="card-body">
+              <h5 class="card-title">Bali, Indonesia</h5>
+              <p class="card-text">Relax on tropical beaches with stunning views.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="new york.jpg" class="card-img-top package-img" alt="New York">
+            <div class="card-body">
+              <h5 class="card-title">New York, USA</h5>
+              <p class="card-text">Discover the vibrant life of the Big Apple.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Travel Packages</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Romantic Getaway</h5>
+              <p class="card-text">Perfect for couples seeking a romantic retreat with inclusive spa treatments and candlelight dinners.</p>
+              <p class="card-text"><strong>Price:</strong> $999</p>
+              <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Adventure Package</h5>
+              <p class="card-text">Includes hiking, rafting, and camping for thrill-seekers and nature lovers.</p>
+              <p class="card-text"><strong>Price:</strong> $799</p>
+              <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <form class="w-75 mx-auto">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 ExploreWorld Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
